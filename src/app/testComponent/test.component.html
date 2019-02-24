@@ -1,0 +1,12 @@
+<h1>I am from test component! {{data}}</h1>
+<button (click)="clickHandler()"  [disabled] = "isDisabled">Click Me</button>
+<p>Button is disabled? {{isDisabled}}</p>
+<input type="text" [placeholder]= "data" (change)="changeHandler($event)"  />
+
+<div><label>Name</label><input type="text" placeholder= "input your name" [(ngModel)]="name" [ngClass]="{error: !isValid(), success: isValid()}" /></div>
+<div #myViewElement>the name is {{name}}</div>
+
+<app-item [displayValueAttribute]="passingData"></app-item>
+
+<!-- set array index to i -->
+<app-item *ngFor="let item of items; let i = index" [displayValueAttribute]="item" [displayIndex]="i" (clicked)="childClickHandler($event)"></app-item>

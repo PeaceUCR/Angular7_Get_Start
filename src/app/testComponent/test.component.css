@@ -1,0 +1,13 @@
+div{
+  margin-top: 1rem;
+  padding-top: 5px;
+  border-top: 1px dashed darkgrey;
+}
+
+.error{
+  border: 1px solid red;
+}
+
+.success{
+  border: 1px solid greenyellow;
+}
