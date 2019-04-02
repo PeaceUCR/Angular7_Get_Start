@@ -15,7 +15,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   { path: '', component: TestComponent },
-  { path: 'route', component: TestRouteComponent },
+  { path: 'test', component: TestRouteComponent }
 ];
 
 @NgModule({
